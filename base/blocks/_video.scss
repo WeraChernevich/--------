@@ -1,0 +1,19 @@
+.video__link {
+    position: relative;
+    display: block;
+    text-align: center;
+
+
+}
+
+.video-icon {
+    position: absolute;
+    padding: 250px 585px;
+
+}
+
+.video__link:hover .video-icon {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+

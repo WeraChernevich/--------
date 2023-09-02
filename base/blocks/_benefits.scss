@@ -1,0 +1,50 @@
+.benefits {
+    padding: 80px 250px 0px 250px;
+}
+
+.benefits__caption {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 600;
+
+}
+
+.benefits__aside {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+
+.benefits__aside-item {
+    padding-top: 20px;
+    width: 344px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 12px;
+    align-items: center;
+    border-radius: 15px;
+    background: #FAFAFA;
+}
+
+.benefits__aside-pic {
+    padding: 27px;
+    background-color: $white;
+    border-radius: 15px;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all .2s ease-in;
+    }
+
+}
+
+.benefits__text {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    text-align: center;
+}

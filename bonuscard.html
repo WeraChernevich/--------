@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=eadge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./app.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=68b4e2b2-cabe-4c7f-ba90-d32cc9ee7c5e&lang=ru_RU"
+        type="text/javascript">
+        </script>
+    <title>bonus</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <img src="./img/header/logotip.svg">
+            </div>
+            <div class="header__nav-row">
+                <a href="./main.html">
+                    <p>Главная</p>
+                </a>
+                <a href="./bonuscard.html">
+                    <p>Бонусная программа</p>
+                </a>
+                <a href="#!">
+                    <p>Сеть АЗС</p>
+                </a>
+                <a href="./company.html">
+                    <p>Для юр. лиц</p>
+                </a>
+                <a href="./contact.html">
+                    <p>Контакты</p>
+                </a>
+            </div>
+            <div class="header__nav-contact">
+                <a href="#!">
+                    <p>8 953 586 43 90</p>
+                </a>
+                <a href="#!" id="open_pop_up">
+                    <p>Обратный звонок</p>
+                </a>
+            </div>
+            <div class="pop_up" id="pop_up">
+                <div class="pop_up_cntainer">
+                    <div class="pop_up_body">
+                        <p>Для того, чтобы</p>
+                        <h4>ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h4>
+                        <h5>Заполните форму ниже:</h5>
+                        <form action="">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Номер телефона">
+                            <button>Отправить</button>
+                        </form>
+                        <div class="pop_up_close" id="close_pop_up">&#10006</div>
+                    </div>
+                </div>
+            </div>
+            <button class="header__nav-btn">Личный кабинет</button>
+        </nav>
+        <hr class="hr-line">
+        <section class="header__nav-info">
+            <div class="header_nav-col">
+                <div class="title">13 АЗС</div>
+                <img src="./img/header/input.svg">
+                <div>в Красноярском крае</div>
+            </div>
+            <div class="header_nav-col">
+                <div class="title">150</div>
+                <img src="./img/header/input.svg">
+                <div>Сотрудников</div>
+            </div>
+            <div class="header_nav-col">
+                <div class="title">1000</div>
+                <img src="./img/header/input.svg">
+                <div>Клиентов в день</div>
+            </div>
+            <div class="header_nav-col">
+                <div class="title">5000</div>
+                <img src="./img/header/input.svg">
+                <div>Победителей за год</div>
+            </div>
+            <div class="header__nav-slogan">
+                <img src="./img/header/slogan.svg" alt="slogan">
+            </div>
+        </section>
+    </header>
+    <main class="main-page">
+        <div class="main__link">
+            <a href="#!">Главная</a>
+            <div>&#8250</div>
+            <p>Бонусная программа</p>
+        </div>
+        <section class="bonus">
+            <div class="bonus__aside">
+                <h4>Программа лояльности “НЕФТЕКОМ”</h4>
+                <p>При покупке нефтепродуктов, товаров в маркете «Нефтеком» и кафе находящихся на АЗС «Нефтеком» бонусы
+                    начисляются
+                    в следующем порядке:</p>
+                <div class="bonus__table">
+                    <div class="bonus__table-header">
+                        <div>Сумма покупок</div>
+                        <div>Количество начисляемых Бонусов
+                            при покупке топлива (за каждый литр)</div>
+                        <div>Количество начисляемых Бонусов
+                            при покупке товаров в маркет «Нефтеком»
+                            в процентах от суммы покупки</div>
+                        <div>Количество начисляемых Бонусов
+                            при покупке товаров в кафе находящихся
+                            на АЗС «Нефтеком» в процентах от суммы покупки</div>
+                    </div>
+                    <ul class="bonus__table-content">
+                        <li>до 699,99 рублей</li>
+                        <li>1 бонус</li>
+                        <li>2%</li>
+                        <li>5%</li>
+                    </ul>
+                    <ul class="bonus__table-content">
+                        <li>от 700 до 1999,99 рублей</li>
+                        <li>1,2 бонус</li>
+                        <li>2%</li>
+                        <li>7%</li>
+                    </ul>
+                    <ul class="bonus__table-content">
+                        <li>Свыше 2000 рублей</li>
+                        <li>1,5 бонус</li>
+                        <li>2%</li>
+                        <li>10%</li>
+                    </ul>
+                </div>
+                <div class="bonus__aside-footer">
+                    <p>* - Срок действия бонусов - 300 (триста) календарных дней с момента осуществления покупки.<br>
+                        ** - Списание бонусов может производиться в размере не более 50% от суммы покупки</p>
+                    <button>Условия программы лояльности</button>
+                </div>
+            </div>
+            <div class="bonus__benefits">
+                <div class="bonus__benefits-userpic">
+                    <img src="./img/bonus/Ruble.svg" class="bonus-icon">
+                    <div>Стоимость бонусной карты 150 рублей</div>
+                </div>
+                <div class="bonus__benefits-userpic">
+                    <img src="./img//bonus/Gas Station.svg" class="bonus-icon">
+                    <div>Приобрести карту можно на любой заправочной станции сети “Нефтеком”</div>
+                </div>
+                <div class="bonus__benefits-userpic">
+                    <img src="./img/bonus/Smartphone.svg" class="bonus-icon">
+                    <div>Так же вы можете зарегистрировать бесплатную <a href="#!">виртуальную карту</a> в нашем
+                        приложении.</div>
+                </div>
+            </div>
+            <h4 class="bonus__subtitle">Как получить виртуальную карту</h4>
+            <div class="bonus__grid">
+                <div class="bonus__grid-current">
+                    <div class="bonus__grid-sm">01</div>
+                    <div>Скачайте приложение serviopump mobile
+                        в <a href="#!">AppStore</a> или <a href="#!">Google play</a>.</div>
+                </div>
+                <div class="bonus__grid-current">
+                    <div class="bonus__grid-sm">02</div>
+                    <div>Пройдите полную регистрацию: введите номер телефона, придумайте пароль для входа
+                        в приложение, ФИО, дату рождения.</div>
+                </div>
+                <div class="bonus__grid-current">
+                    <div class="bonus__grid-sm">03</div>
+                    <div>Найдите и выберите в списке
+                        сеть НЕФТЕКОМ.</div>
+                </div>
+                <div class="bonus__grid-current">
+                    <div class="bonus__grid-sm">04</div>
+                    <div>Нажмите Регистрация в сети АЗС, далее введите специальный код из SMS.</div>
+                </div>
+                <div class="bonus__grid-current">
+                    <div class="bonus__grid-sm">05</div>
+                    <div>Во вкладке "ПОКУПКИ" будет виден ваш бонусный баланс и все операции по карте.</div>
+                </div>
+                <div class="bonus__grid-current">
+                    <div class="bonus__grid-sm">06</div>
+                    <div>Во вкладке "КАРТЫ" будет отображаться QR-код, который необходимо предъявлять на кассе АЗС
+                        для начисления и списания бонусов.</div>
+                </div>
+            </div>
+            <div class="bonus__footer">
+                <div class="bonus__footer-column">
+                    <p>Бонусы можно потратить на следующий день. Более подробно с правилами участия в Программе
+                        лояльности физических лиц – клиентов сети АЗС ООО «Нефтеком» можно ознакомиться <a
+                            href="#!">здесь</a>.
+                    </p>
+                </div>
+                <div class="bonus__footer-list">
+                    <div>Информация для справок:</div>
+                    <div class="bonus__footer-items">
+                        <div class="bonus__footer-item">
+                            <img src="./img/bonus/Phone Calling.svg">
+                            <div class="1">
+                                <div>Телефон:</div>
+                                <div>8 (391) 286-43-90</div>
+                            </div>
+                        </div>
+                        <div class="bonus__footer-item">
+                            <img src="./img/bonus/Chat Round Dots.svg">
+                            <div class="2">
+                                <div>Мессенджеры:</div>
+                                <div>8 (953) 586-43-90</div>
+                            </div>
+                        </div>
+                        <div class="bonus__footer-item">
+                            <img src="./img/bonus/Letter.svg">
+                            <div>
+                                <div>Почта:</div>
+                                <div>promo@neftecom24.ru</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><img src="./img/bonus/VK.svg"> Мы ВКонтакте</div>
+                </div>
+            </div>
+        </section>
+
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__nav">
+                <h3>Навигация по сайту</h3>
+                <a href="./main.html">
+                    <p>Главная</p>
+                </a>
+                <a href="./bonuscard.html">
+                    <p>Бонусная программа</p>
+                </a>
+                <a href="#!">
+                    <p>Сеть АЗС</p>
+                </a>
+                <a href="./job.html">
+                    <p>Вакансии</p>
+                </a>
+                <a href="./company.html">
+                    <p>Для юридических лиц</p>
+                </a>
+                <a href="./contact.html">
+                    <p>Контакты</p>
+                </a>
+                <a href="#!">
+                    <p>Политика конфиденциальности</p>
+                </a>
+                <a href="#!">
+                    <p>Личный кабинет</p>
+                </a>
+            </div>
+            <div class="footer__contact">
+                <h3>Наши контакты</h3>
+                <a href="#!">
+                    <p>Офис:</p>
+                </a>
+                <a href="#!">
+                    <p>660021, Россия, Красноярск,<br>пр. Мира, 128 (оф.140)</p>
+                </a>
+                <a href="#!">
+                    <p>Телефон:</p>
+                </a>
+                <a href="#!">
+                    <p>+7 (391) 265-04-48</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">отдел канцелярии<br>Часы работы: с 09:00-18:00</p>
+                </a>
+
+            </div>
+            <div class="footer__contact">
+                <h3>E-mail:</h3>
+                <a href="#!">
+                    <p>neftecom-@mail.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">отдел канцелярии</p>
+                </a>
+                <a href="#!">
+                    <p>sale@kroil24.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">Оптовая реализация ГСМ</p>
+                </a>
+                <a href="#!">
+                    <p>promo@neftecom24.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">Отдел маркетинга</p>
+                </a>
+                <a href="#!">
+                    <p>kachestvo@neftecom24.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">Контроль качества</p>
+                </a>
+            </div>
+            <div class="footer-map">
+                <img src="./img/footer/map.svg">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

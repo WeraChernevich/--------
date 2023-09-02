@@ -1,0 +1,40 @@
+.form {
+    padding: 70px 250px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 126, 1);
+    color: $white;
+
+}
+
+.form__cta {
+    width: 703px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+
+}
+
+.form__input input {
+    padding left: 15px;
+    border-radius: 5px;
+    border: 1px solid $white;
+}
+
+.form__input button {
+    border-radius: 5px;
+}
+
+.form-agree {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=eadge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./app.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=68b4e2b2-cabe-4c7f-ba90-d32cc9ee7c5e&lang=ru_RU" type="text/javascript">
+    </script>
+    <title>main</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <img src="./img/header/logotip.svg">
+            </div>
+            <div class="header__nav-row">
+                <a href="./main.html">
+                    <p>Главная</p>
+                </a>
+                <a href="./bonuscard.html">
+                    <p>Бонусная программа</p>
+                </a>
+                <a href="#!">
+                    <p>Сеть АЗС</p>
+                </a>
+                <a href="./company.html">
+                    <p>Для юр. лиц</p>
+                </a>
+                <a href="#!">
+                    <p>Контакты</p>
+                </a>
+            </div>
+            <div class="header__nav-contact">
+                <a href="#!">
+                    <p>8 953 586 43 90</p>
+                </a>
+                <a href="#!" id="open_pop_up">
+                    <p>Обратный звонок</p>
+                </a>
+            </div>
+            <div class="pop_up" id="pop_up">
+                <div class="pop_up_cntainer">
+                    <div class="pop_up_body">
+                        <p>Для того, чтобы</p>
+                        <h4>ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h4>
+                        <h5>Заполните форму ниже:</h5>
+                        <form action="">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Номер телефона">
+                            <button>Отправить</button>
+                        </form>
+                        <div class="pop_up_close" id="close_pop_up">&#10006</div>
+                    </div>
+                </div>
+            </div>
+            <button class="header__nav-btn">Личный кабинет</button>
+        </nav>
+        <hr class="hr-line">
+        <section class="header__nav-info">
+            <div class="header_nav-col">
+                <div class="title">13 АЗС</div>
+                <img src="./img/header/input.svg" class="header_nav-icon">
+                <div>в Красноярском крае</div>
+            </div>
+            <div class="header_nav-col">
+                <div class="title">150</div>
+                <img src="./img/header/input.svg">
+                <div>Сотрудников</div>
+            </div>
+            <div class="header_nav-col">
+                <div class="title">1000</div>
+                <img src="./img/header/input.svg">
+                <div>Клиентов в день</div>
+            </div>
+            <div class="header_nav-col">
+                <div class="title">5000</div>
+                <img src="./img/header/input.svg">
+                <div>Победителей за год</div>
+            </div>
+            <div class="header__nav-slogan">
+                <img src="./img/header/slogan.svg" alt="slogan">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="benefits">
+            <div class="benefits__caption">
+                <h2>Сеть АЗС НЕФТЕКОМ</h2>
+            </div>
+            <section class="benefits__aside">
+                <div class="benefits__aside-item">
+                    <div>
+                        <img class="benefits__aside-pic" src="./img/main/map.svg" alt="map">
+                    </div>
+                    <h3>Удобное расположение</h3>
+                    <div class="benefits__text">Наши АЗС имеют удобное
+                        расположение в г. Красноярске
+                        и Красноярском крае</div>
+                </div>
+                <div class="benefits__aside-item">
+                    <div>
+                        <img class="benefits__aside-pic" src="./img/main/voice.svg" alt="voice">
+                    </div>
+                    <h3>Голосовое сопровождение</h3>
+                    <div class="benefits__text">На всех станциях АЗС размещено
+                        голосовое сопровождение
+                        о статусе заправки</div>
+                </div>
+                <div class="benefits__aside-item">
+                    <div>
+                        <img class="benefits__aside-pic" src="./img/main/toilet.svg" alt="tol">
+                    </div>
+                    <h3>Уборные комнаты</h3>
+                    <div class="benefits__text">На всех станциях АЗС размещены
+                        уборные комнаты</div>
+                </div>
+                <div class="benefits__aside-item">
+                    <div>
+                        <img class="benefits__aside-pic" src="./img/main/card-check.svg" alt="card-check">
+                    </div>
+                    <h3>Карта лояльности</h3>
+                    <div class="benefits__text">Помимо низких цен на топливо,
+                        у нас также есть бонусная программа</div>
+                </div>
+            </section>
+        </section>
+        <section class="container">
+            <section class="features">
+                <div class="features__items">
+                    <h4>Бонусная программа</h4>
+                    <div>Приобретите карту лояльности в сетях АЗС “Нефтеком” или оформите виртуальную карту и получайте
+                        до 10% бонусов</div>
+                    <button class="features-btn"><a href="./bonuscard.html" style="color: rgba(0, 0, 222, 1)">Узнать
+                            подробнее</a></button>
+                </div>
+                <div class="features__wrapper-1">
+                    <img src="./img/features/card.jpg" class="features-img">
+                </div>
+            </section>
+            <section class="features">
+                <div class="features__wrapper-2">
+                    <img src="./img/features/phone.svg" class="features-img">
+                </div>
+                <div class="features__items">
+                    <h4>Скачайте наше приложение</h4>
+                    <div>Установите на свой смартфон мобильное приложение «АЗС НЕФТЕКОМ»</div>
+                    <div>Создайте в приложении виртуальную карту
+                        и используйте свой телефон для накопления баллов или оплаты</div>
+                    <div class="features__items-icon">
+                        <img src="./img/features/AppStore icon.svg">
+                        <img src="./img/features/GooglePlay icon.svg">
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <div class="features__items">
+                    <h4>АЗС НЕФТЕКОМ на карте</h4>
+                    <div>Ознакомьтесь со всеми нашими заправочными
+                        станциями на карте!</div>
+                    <button class="features-btn">Посмотреть адреса АЗС</button>
+                </div>
+                <div class="features__map">
+                    <div class="map" id="map"></div>
+                </div>
+            </section>
+            <section class="holder">
+                <div class="holder__video">
+                    <h4>Качество во всем</h4>
+                    <a href="https://yandex.ru/video/preview/15485592584922202861?tmpl_version=releases%2Ffrontend%2Fvideo%2Fv1.1168.0%238d942de0f4ebc4eb6b8f3c24ffbd1f8dbc5bbe63"
+                        class="video__link">
+                        <img src="./img/holder/play.svg" class="video-icon">
+                        <img src="./img/holder/video.jpg" class="video-img">
+                    </a>
+                </div>
+                <div class="holder__row">
+                    <img src="./img/holder/tat.jpg">
+                    <div class="holder__icons">
+                        <h4>Оставьте отзыв о нас</h4>
+                        <div class="holder__socials">
+                            <div class="holder__socials-icon">
+                                <img src="./img/holder/yandex.svg" class="socials-icon">
+                                <h5>Яндекс</h5>
+                                <div>Оценка 4,9</div>
+                                <button class="holder__btn">Оставить отзыв</button>
+                            </div>
+                            <div class="holder__socials-icon">
+                                <img src="./img/holder/facebk.svg" class="socials-icon">
+                                <h5>Flamp</h5>
+                                <div>Оценка 4,9</div>
+                                <button class="holder__btn">Оставить отзыв</button>
+                            </div>
+                            <div class="holder__socials-icon">
+                                <img src="./img/holder/2gis.svg" class="socials-icon">
+                                <h5>2Gis</h5>
+                                <div>Оценка 4,9</div>
+                                <button class="holder__btn">Оставить отзыв</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__nav">
+                <h3>Навигация по сайту</h3>
+                <a href="./main.html">
+                    <p>Главная</p>
+                </a>
+                <a href="./bonuscard.html">
+                    <p>Бонусная программа</p>
+                </a>
+                <a href="#!">
+                    <p>Сеть АЗС</p>
+                </a>
+                <a href="./job.html">
+                    <p>Вакансии</p>
+                </a>
+                <a href="./company.html">
+                    <p>Для юридических лиц</p>
+                </a>
+                <a href="#!">
+                    <p>Контакты</p>
+                </a>
+                <a href="#!">
+                    <p>Политика конфиденциальности</p>
+                </a>
+                <a href="#!">
+                    <p>Личный кабинет</p>
+                </a>
+            </div>
+            <div class="footer__contact">
+                <h3>Наши контакты</h3>
+                <a href="#!">
+                    <p>Офис:</p>
+                </a>
+                <a href="#!">
+                    <p>660021, Россия, Красноярск,<br>пр. Мира, 128 (оф.140)</p>
+                </a>
+                <a href="#!">
+                    <p>Телефон:</p>
+                </a>
+                <a href="#!">
+                    <p>+7 (391) 265-04-48</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">отдел канцелярии<br>Часы работы: с 09:00-18:00</p>
+                </a>
+
+            </div>
+            <div class="footer__contact">
+                <h3>E-mail:</h3>
+                <a href="#!">
+                    <p>neftecom-@mail.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">отдел канцелярии</p>
+                </a>
+                <a href="#!">
+                    <p>sale@kroil24.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">Оптовая реализация ГСМ</p>
+                </a>
+                <a href="#!">
+                    <p>promo@neftecom24.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">Отдел маркетинга</p>
+                </a>
+                <a href="#!">
+                    <p>kachestvo@neftecom24.ru</p>
+                </a>
+                <a href="#!">
+                    <p style="color: rgba(255, 255, 255, 0.57)">Контроль качества</p>
+                </a>
+            </div>
+            <div class="footer-map">
+                <img src="./img/footer/map.svg">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

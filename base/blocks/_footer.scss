@@ -1,0 +1,24 @@
+.footer {
+    background-color: $bg-footer;
+    color: $white;
+}
+
+
+.footer__content {
+    padding: 100px 250px 100px 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.footer__nav, .footer__contact
+{display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footer-map {
+    width: 401px;
+    height: 323px;
+    border-radius: 15px;
+}

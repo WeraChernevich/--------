@@ -1,0 +1,66 @@
+.header {
+    padding-bottom: 60px;
+    max-height: 955px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(./../img/header/header-BG.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header__video {
+    text-align: center;
+}
+
+.header__nav {
+    padding: 34px 250px 0px 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $white;
+    font-family: $secondary-text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.header__nav-row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    color: $white;
+
+    
+}
+
+.header__nav-info {
+    padding-top: 65px;
+    padding-right: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.header_nav-col {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3.5fr .5fr;
+    gap: 5px;
+    color: $white;
+    font-family: $main-text;
+    letter-spacing: 1.3px;
+    width: 224px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+
+    &:hover {
+        background: $blue;
+    }
+   
+}
+
+.header_nav-icon:hover {
+    background-color: $white;
+}
